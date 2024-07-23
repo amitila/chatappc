@@ -22,10 +22,6 @@ void* recv_mess()
 		}
 		printf("%s: %s", Cname, buffer);
 	}	
-	//if (buffer == "exit") {
-	//	close(client_sock);
-	//	printf("[+]Em da thoat.\n\n");
-	//}
 }
 
 void* send_mess()
@@ -79,10 +75,6 @@ void* send_mess()
 		printf("%s", mess);
 		send(client_sock, mess, strlen(buffer), 0);
 	}
-	//if (buffer == "exit") {
-	//	close(client_sock);
-	//	printf("[+]Anh da thoat.\n\n");
-	//}
 }
 
 int main() {

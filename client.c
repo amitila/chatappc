@@ -71,8 +71,6 @@ void* recv_mess()
 			printf("Please enter Y and Enter to exit!\n");
 			exit(0);
 		}
-		//printf("\r\n");
-		//printf("\033[A \r");
 		printf("%s: %s", Sname, buffer);
 	}
 }
